@@ -1,4 +1,4 @@
-class TophealinesinUS {
+class TophealinesinUS{
   String? status;
   int? totalResults;
   List<Articles>? articles;

@@ -60,17 +60,14 @@ class _MainscreenState extends State<Mainscreen> {
                 value: FilterList.bbcNews,
               ),
               PopupMenuItem<FilterList>(
-                child: Text("ABC news"),
+                child: Text("ABC new"),
                 value: FilterList.abcNews,
               ),
               PopupMenuItem<FilterList>(
                 child: Text("CNN news"),
                 value: FilterList.cnn,
               ),
-              PopupMenuItem<FilterList>(
-                child: Text("Independent news"),
-                value: FilterList.independent,
-              ),
+
               // Add other PopupMenuItems for other filter options
             ],
           )
@@ -193,9 +190,15 @@ class _MainscreenState extends State<Mainscreen> {
               },
             ),
           ),
+SizedBox(
+  height: 20,
+),
 Container(
-  child: Text("Top Headlines",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.grey),),
-  height: 40,
+  child: Padding(
+    padding: const EdgeInsets.symmetric(horizontal: 87),
+    child: Text("Top Headlines",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 45,color: Colors.blueGrey),),
+  ),
+  height: 100,
 ),
 
           SizedBox(
